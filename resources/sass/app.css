@@ -1,0 +1,76 @@
+#example {
+  position: relative;
+  z-index: 100;
+}
+
+.slider-all {
+  max-width: 95%;
+  margin: auto;
+}
+@media (min-width: 1500px) {
+  .slider-all {
+    max-width: 1400px;
+  }
+}
+
+.Slider_Slick {
+  position: relative;
+  padding: 20px 0 50px;
+  height: 100%;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+.Slider_Slick img {
+  width: 100%;
+  padding: 2px 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.Slider_Slick img:hover {
+  scale: 1.02;
+}
+.Slider_Slick .slick-dots {
+  position: relative;
+}
+.Slider_Slick .swiper-wrapper {
+  transform: translate3d(0px, 0px, 0px) !important;
+}
+.Slider_Slick .slick-next, .Slider_Slick .slick-prev {
+  width: 50px;
+  height: 50px;
+  background-color: #111;
+  right: 10px;
+  border: 1px solid var(--text-color);
+  border-radius: 1px;
+  transition: 0.3s;
+  z-index: 100;
+}
+.Slider_Slick .slick-next.slick-prev, .Slider_Slick .slick-prev.slick-prev {
+  left: 10px;
+}
+.Slider_Slick .slick-next.slick-prev::before, .Slider_Slick .slick-prev.slick-prev::before {
+  content: "\f104";
+}
+.Slider_Slick .slick-next:hover, .Slider_Slick .slick-next:focus, .Slider_Slick .slick-prev:hover, .Slider_Slick .slick-prev:focus {
+  background-color: #222;
+}
+.Slider_Slick .slick-next:before, .Slider_Slick .slick-prev:before {
+  content: "\f105";
+  font-family: "FontAwesome";
+  color: white;
+  font-size: 25px;
+}
+@media (max-width: 800px) {
+  .Slider_Slick .slick-next, .Slider_Slick .slick-prev {
+    width: 35px;
+    height: 35px;
+  }
+  .Slider_Slick .slick-next::before, .Slider_Slick .slick-prev::before {
+    font-size: 18px;
+  }
+}
+
+.slick * {
+  direction: ltr !important;
+}/*# sourceMappingURL=app.css.map */
